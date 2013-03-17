@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
-gem 'therubyracer'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :production do
 	gem 'pg'
+	gem 'therubyracer', :platform => :ruby
 end
 
 group :development, :test do
