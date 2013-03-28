@@ -19,3 +19,6 @@ doc/
 .project
 .DS_Store
 .idea
+
+#ignore Paperclip upload of image pins
+/public/system
