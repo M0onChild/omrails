@@ -67,4 +67,14 @@ Omrails::Application.configure do
 
   #  In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'http://polar-dawn-8402.herokuapp.com' }
+
+  # Paperclip should use Amazon s3 for images on Heroku.
+config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "olneyyears",
+      :access_key_id => "AKIAI7RKSVR62F6JJFGQ",
+      :secret_access_key => "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"
+    }
+  }
 end
